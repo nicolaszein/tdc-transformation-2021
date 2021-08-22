@@ -1,5 +1,5 @@
 from src.domain.employee import Employee
-from src.application.employee_repository import EmployeeRepository
+from src.domain.employee_repository import EmployeeRepository
 
 
 class EmployeeService:

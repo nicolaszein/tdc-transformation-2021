@@ -1,7 +1,8 @@
 from src.infrastructure.sqlalchemy import Employee, session
+from src.domain.employee_repository import EmployeeRepository as AbstractEmployeeRepository
 
 
-class EmployeeRepository:
+class EmployeeRepository(AbstractEmployeeRepository):
 
     def fetch_by_id(self, id):
         employee = session.query(Employee).filter(Employee.id == id).first()
